@@ -6,4 +6,4 @@ Number: {{ payload.pullRequest.number }}
 Title: {{ payload.pullRequest.title }}
 Body: {{ payload.pullRequest.body }}
 
-{{ toJson(payload) }}
+{{ env.client_payload }}
