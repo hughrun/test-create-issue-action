@@ -7,14 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: 
       issues: write
-    steps:
-      - name: save vars
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.client_payload.ref }}
-        env: 
-          client_payload: ${{ github.event.client_payload }}
-      
+    steps:      
       - name: write issue
       - uses: actions/checkout@v3
       - uses: JasonEtco/create-an-issue@v2          
