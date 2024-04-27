@@ -2,8 +2,6 @@
 title: Document PR {{ payload.client_payload.number }} - {{ payload.client_payload.title }}
 ---
 
-Number: {{ payload.pull_request.number }}
-Title: {{ payload.pull_request.title }}
-Body: {{ payload.pull_request.body }}
+Documentation is needed for changes made in https://github.com/bookwyrm-social/bookwyrm/pull/{{ payload.client_payload.title }}
 
-body: {{ payload.client_payload.body }}
+{{ payload.client_payload.body }}
