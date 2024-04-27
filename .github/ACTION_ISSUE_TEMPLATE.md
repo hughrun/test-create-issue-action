@@ -1,5 +1,5 @@
 ---
-title: Document PR ${{ payload.number }} - ${{ payload.title }}
+title: Document PR ${{ payload.client_payload.number }} - ${{ payload.client_payload.title }}
 ---
 
-${{ payload.body }}
+${{ payload.client_payload.body }}
