@@ -1,7 +1,9 @@
 ---
-title: Document PR {{ env.PAYLOAD.number }} - {{ env.PAYLOAD.title }}
+title: Document PR {{ payload.pullRequest.number }} - {{ payload.pullRequest.title }}
 ---
 
-Number: {{ env.PAYLOAD.numnber }}
-Title: {{ env.PAYLOAD.title }}
-Body: {{ env.PAYLOAD.body }}
+Number: {{ payload.pullRequest.number }}
+Title: {{ payload.pullRequest.title }}
+Body: {{ payload.pullRequest.body }}
+
+{{ payload }}
