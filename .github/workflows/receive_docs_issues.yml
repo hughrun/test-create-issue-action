@@ -8,7 +8,6 @@ jobs:
     permissions: 
       issues: write
     steps:      
-      - name: write issue
       - uses: actions/checkout@v3
       - uses: JasonEtco/create-an-issue@v2          
         env:
