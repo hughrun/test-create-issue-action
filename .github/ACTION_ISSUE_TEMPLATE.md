@@ -1,7 +1,7 @@
 ---
-title: Document PR {{ payload.number }} - {{ payload.title }}
+title: Document PR {{ PAYLOAD.number }} - {{ PAYLOAD.title }}
 ---
 
-Number: {{ payload.number }}
-Title: {{ payload.pull_request.title }}
-Body: {{ payload.pull_request.body }}
+Number: {{ PAYLOAD.numnber }}
+Title: {{ PAYLOAD.title }}
+Body: {{ PAYLOAD.body }}
