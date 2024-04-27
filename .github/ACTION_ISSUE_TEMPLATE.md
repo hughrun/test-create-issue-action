@@ -1,5 +1,5 @@
 ---
-title: Document PR ${{ payload.client_payload.number }} - ${{ payload.client_payload.title }}
+title: Document PR {{ github.event.client_payload.number }} - {{ github.event.client_payload.title }}
 ---
 
-${{ payload.client_payload.body }}
+{{ github.event.client_payload.body }}
