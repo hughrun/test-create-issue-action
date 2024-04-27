@@ -1,7 +1,7 @@
 ---
-title: Document PR {{ PAYLOAD.number }} - {{ PAYLOAD.title }}
+title: Document PR {{ env.PAYLOAD.number }} - {{ env.PAYLOAD.title }}
 ---
 
-Number: {{ PAYLOAD.numnber }}
-Title: {{ PAYLOAD.title }}
-Body: {{ PAYLOAD.body }}
+Number: {{ env.PAYLOAD.numnber }}
+Title: {{ env.PAYLOAD.title }}
+Body: {{ env.PAYLOAD.body }}
