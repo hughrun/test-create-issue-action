@@ -1,5 +1,7 @@
 ---
-title: Document PR {{ github.event.client_payload.number }} - {{ github.event.client_payload.title }}
+title: Document PR {{ payload.number }} - {{ payload.title }}
 ---
 
-{{ github.event.client_payload.body }}
+Number: {{ payload.number }}
+Title: {{ payload.pull_request.title }}
+Body: {{ payload.pull_request.body }}
