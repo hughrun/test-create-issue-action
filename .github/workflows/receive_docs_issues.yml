@@ -9,9 +9,10 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@v3
-      - uses: JasonEtco/create-an-issue@v2
+      - uses: JasonEtco/create-an-issue@v2          
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PAYLOAD: ${{ github.event.client_payload }}
         with:
+          ref: ${{ github.event.client_payload.ref }}
           filename: .github/ACTION_ISSUE_TEMPLATE.md
